@@ -1,6 +1,8 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from vector import retriever
+from mcp.client import Client
+from order_constraints import order_constraints
 
 # define the model
 model = OllamaLLM(model="llama3.2")
@@ -29,5 +31,6 @@ while True:
         break
     reviews = retriever.invoke(question)
     result = chain.invoke({"reviews": reviews, "question": question})
+    
     print(result)
 

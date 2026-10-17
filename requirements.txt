@@ -1,4 +1,12 @@
 langchain
+langchain-core
 langchain-ollama
 langchain-chroma
+langgraph
+mcp
 pandas
+z3-solver
+
+python-dotenv
+langchain[antropic]
+langgraph
