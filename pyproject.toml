@@ -1,0 +1,23 @@
+[project]
+name = "ai-agent-ollama-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abdeLKabir-56", email = "abdelkabirelhamoussi@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk>=2.12.0",
+    "langchain>=1.4.7",
+    "langchain-ollama>=1.1.0",
+    "langchain-tavily>=0.2.18",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+ai-agent-ollama-langchain = "ai_agent_ollama_langchain:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
