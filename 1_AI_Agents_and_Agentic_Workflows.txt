@@ -1,0 +1,110 @@
+
+With the advancements in Generative AI, AI Agents will be key in reshaping the business. The AI Agents are powerful tools that are making processes simpler and data more consumable for all - small, medium and large enterprises.
+
+AI Agents
+AI Agents are software tools which can orchestrate tasks autonomously by making decisions based on its environment and inputs, with preset guard-rails. They are advanced systems that can learn and update their behaviour to achieve the expected outcome, if given the context and the objective/goal to achieve. While we are at the very early stages of the Agent realm, evaluation and tracking are essential for an accurate and responsible response.
+
+Agents are given tasks, data and the necessary tools to perform a task with preset guidelines in the prompt. Prompt Engineering is umpteen import to get the right set of responses in a situation where the Agent has found the answer or is not in a position to answer due to data unavailability or due to inappropriate queries. Usually Agents perform actions based on the Role assigned.
+
+In a Multi-Agent System (MAS), there are multiple agents who work towards a common goal. They may work as sequential set of agents or may have a hierarchy of agents to supervise and achieve the goal assigned.
+
+Agentic Workflows
+We have known workflow orchestration tools from the early years in Technology. These tools help us to orchestrate a sequence of steps to achieve an end goal. Similarly Agentic Workflows with AI Agents are capable of learning and performing complex tasks with higher accuracy. While we use Directed Acyclic Graphs (DAGs) in Data pipelines, in AI, there is a need for allowing loops to help the system to monitor, self-learn, iterate over the tasks and produce an efficient outcome. AI Agentic workflows manage the task execution order, assign responsibilities to specified AI Agents and review the responses to ensure an acceptable outcome for complex goals and tasks.
+
+Press enter or click to view image in full size
+
+Good Frameworks
+There are a plethora of frameworks coming up to help build robust Agent workflows today. Autogen, Crew AI, LangGraph from Langchain have quite a presence in terms of building Agentic Workflows. While it is much easier to control the workflow, memory and other optimizations with Langraph, it comes with a short learning curve. Autogen and Crew AI on the other hand are easier to implement but act like a blackbox in terms of debugging or tweaking the flow as per our need. It is difficult to predict execution flow until you are aware of the internal working and implementation for these frameworks. Today we will discuss a simple workflow with Crew AI just to understand how we can set up an agentic workflow with different AI Agents.
+
+Example
+This is a short example of Email classification and response using Crew AI. One has to define the Tasks and Agents with good prompts to set the right expectations and Crew manages the flow with the help of LLMs to generate the right outcome. You may use the same or different models as per task to achieved.
+
+Press enter or click to view image in full size
+
+The process can be achieved with a set of Sequential agents or a Hierarchy of agents as highlighted below. A hierarchical flow has a Manager agent (with or without it’s own LLM) to validate and manage the agents to achieve the prescribed goal.
+
+Press enter or click to view image in full size
+
+The code is available for a quick run here.
+
+Get Debashree’s stories in your inbox
+Join Medium for free to get updates from this writer.
+
+Enter your email
+Subscribe
+
+Remember me for faster sign in
+
+When the flow is complex, it is pretty difficult to understand and debug through the workflow. LangGraph does a pretty commendable job in this case. It is a library for building stateful, multi-actor applications with LLMs, used to create agent and multi-agent workflows. It seamlessly integrates with LangChain libraries in general, and LangSmith for observability.
+
+Here is an example of a complex workflow. Feel free to dive in.
+
+Press enter or click to view image in full size
+
+https://github.com/DhunganaKB/OpenAI-App/blob/main/Notebooks/AgentSupervisor_v2.ipynb
+To run a something simple with LangGraph, this is one great example. So start simple and hop on!
+
+References
+🦜🕸️LangGraph
+Build language agents as graphs
+langchain-ai.github.io
+
+GitHub - crewAIInc/crewAI-examples
+Contribute to crewAIInc/crewAI-examples development by creating an account on GitHub.
+github.com
+
+gpt-researcher/README.md at master · assafelovic/gpt-researcher
+GPT based autonomous agent that does online comprehensive research on any given topic - gpt-researcher/README.md at…
+github.com
+
+Generative Ai Tools
+
+LLM
+
+Agentic Ai
+
+Digital Transformation
+
+Langgraph
+
+--
+
+
+--
+
+
+Debashree
+Written by Debashree
+22 followers
+·
+14 following
+CTO, Kreatr AI | Ex-Nike and more | Leadership| Gen AI, Data Analytics and Cloud | Believer of Ikigai
+
+Towards Applied Generative AI
+Published in Towards Applied Generative AI
+61 followers
+·
+Last published Sep 19, 2025
+Articles on Gen AI Learning and Development
+
+Help
+
+Status
+
+About
+
+Careers
+
+Press
+
+Blog
+
+Store
+
+Privacy
+
+Rules
+
+Terms
+
+Text to speech
